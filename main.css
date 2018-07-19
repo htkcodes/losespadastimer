@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Montserrat");
+html {
+  background-color: #F8FBFE; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Chivo Regular", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 95.5078125%;
+  margin: 0 auto;
+  width: 90%; }
+
+.date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: #0f6ffd; }
+  .date .year {
+    color: rgba(188, 185, 184, 0.7) !important; }
+
+.main {
+  padding: 4px 0;
+  margin: 100px auto;
+  border-radius: 4px; }
+  .main .main-timer {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    position: absolute;
+    color: #0f6ffd;
+    font-size: 5rem;
+    font-family: 'Comfortaa', cursive; }
+    .main .main-timer #hourr {
+      display: inline-block; }
+    .main .main-timer span.min {
+      color: rgba(188, 185, 184, 0.7);
+      font-size: 5rem !important;
+      margin-left: 1px; }
+    .main .main-timer span {
+      font-size: 1.1rem;
+      margin: -12.1px; }
+
+.toast-color {
+  background-color: #0f6ffd !important; }
+
+.nav {
+  float: left;
+  width: 215px; }
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .nav li {
+    padding: 30px 0 0 95px;
+    height: 84px;
+    border-bottom: 1px solid rgba(193, 193, 193, 0.5);
+    font-size: 25px;
+    color: rgba(188, 185, 184, 0.7); }
+    .nav li:hover {
+      color: #E0744D; }
+  .nav .al {
+    background: url("http://www.charlesamoss.com/design/images/clock_wid/alams.svg") 15% center no-repeat; }
+  .nav .sw {
+    background: url("http://www.charlesamoss.com/design/images/clock_wid/stopwatch.svg") 15% center no-repeat; }
+    .nav .sw span {
+      font-size: 1.4rem; }
+  .nav .tm {
+    background: url("http://www.charlesamoss.com/design/images/clock_wid/timer.svg") 15% center no-repeat; }
+  .nav .st {
+    background: url("http://www.charlesamoss.com/design/images/clock_wid/site.svg") 15% center no-repeat;
+    border-bottom: 0px; }
+
+#clock {
+  padding: 0;
+  position: relative;
+  list-style: none;
+  margin: -50px 10px 0 0;
+  height: 234px;
+  width: 234px;
+  display: block;
+  float: right;
+  /*  -webkit-box-shadow: 0px 0px 20px rgba(47, 40, 39, 0.4);  */ }
+
+#sec {
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/sec.svg");
+  z-index: 3; }
+
+#min {
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/min.svg");
+  z-index: 2; }
+
+#hour {
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/hour.svg");
+  z-index: 1; }
+
+#date {
+  float: right;
+  padding: 0 40px 40px 0; }
+  #date #monthDay {
+    display: block;
+    font-size: 60px; }
+  #date #year {
+    margin: 8px 0 0 55px;
+    display: block;
+    text-height: 50%;
+    font-size: 36px;
+    color: rgba(188, 185, 184, 0.7); }
+
+.menu {
+  width: 50%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  position: absolute; }
+  .menu i {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    position: absolute;
+    color: #0f6ffd;
+    cursor: pointer; }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 2.2rem;
+  font-style: normal;
+  margin-left: 20px; }
+
+/*# sourceMappingURL=main.css.map */
