@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Megrim|Montserrat");
 html {
   background-color: #F8FBFE; }
 
@@ -12,13 +12,27 @@ body {
   margin: 0 auto;
   width: 90%; }
 
+.name {
+  font-family: 'Megrim', cursive;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 3.6rem;
+  color: #0f6ffd; }
+
 .date {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   text-align: center;
   color: #0f6ffd; }
-  .date .year {
+  .date .year, .date .day {
     color: rgba(188, 185, 184, 0.7) !important; }
+
+.day {
+  font-size: 1.3rem;
+  position: absolute;
+  margin-left: 10px !important; }
 
 .main {
   padding: 4px 0;
@@ -44,6 +58,10 @@ body {
 
 .toast-color {
   background-color: #0f6ffd !important; }
+
+#timer {
+  opacity: 1;
+  display: inline-block; }
 
 .nav {
   float: left;
@@ -110,9 +128,9 @@ body {
 
 .menu {
   width: 50%;
-  top: 60%;
+  top: 90%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -70%);
   position: absolute; }
   .menu i {
     top: 60%;
@@ -127,5 +145,8 @@ body {
   font-size: 2.2rem;
   font-style: normal;
   margin-left: 20px; }
+
+.dbn {
+  display: none !important; }
 
 /*# sourceMappingURL=main.css.map */
