@@ -14,14 +14,22 @@ function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
+    var dn=today.getDate();
     var d = today.getDay();
     var s = today.getSeconds();
     var ms = today.getMilliseconds();
     m = checkTime(m);
     s = checkTime(s);
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    if(h>12)
+{
+    h= h-12;
+}
     document.getElementById('hourr').innerHTML =
         h;
+
+    document.querySelector('.daynum').innerHTML=dn;
+
     document.querySelector(".day").innerHTML = days[d];
 
     document.getElementById('min').innerHTML = m;
@@ -36,7 +44,7 @@ function startTime() {
         sound.play();
         M.toast({
             html: 'Daily Scrum in 5 minutes',
-            displayLength: 5000,
+            displayLength: 50000,
             classes: 'toast-color'
         })
     }
@@ -49,8 +57,8 @@ function startTime() {
         });
         sound.play();
         M.toast({
-            html: 'Daily Scrum',
-            displayLength: 5000,
+            html: 'Daily Scrum in Progress...',
+            displayLength: 900000,
             classes: 'toast-color'
         })
 
@@ -86,7 +94,7 @@ function startTime() {
                 sound.play();
                 M.toast({
                     html: 'Sprint Review should be wrapping up',
-                    displayLength: 5000,
+                    displayLength: 50000,
                     classes: 'toast-color'
                 })
                 $("#timer").fadeOut("slow", function () {
@@ -119,7 +127,7 @@ function startTime() {
         });
         sound.play();
         M.toast({
-            html: 'Lunch in 2 minutes',
+            html: 'Lunch in 5 minutes',
             displayLength: 5000,
             classes: 'toast-color'
         })
@@ -128,7 +136,7 @@ function startTime() {
 
 
 
-    if (h == 14 && m == 14 && s == 30) {
+    if (h == 13 && m == 00 && s == 01) {
 
         //console.log(ms)
         var sound = new Howl({
@@ -142,7 +150,7 @@ function startTime() {
         })
         M.toast({
             html: 'Lunch in Progress...',
-            displayLength: 2460000,
+            displayLength: 3540000,
             classes: 'toast-color'
         })
 
